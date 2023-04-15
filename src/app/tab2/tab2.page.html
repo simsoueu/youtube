@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 2
+      Start Workout
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,9 +9,25 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
+      <ion-title size="large">Start Workout</ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
-</ion-content>
+  <ion-content class="ion-padding">
+    <ion-item color="secondary" expand="full">
+      <ion-label button>Start an Empty Workout</ion-label>
+    </ion-item>
+
+    <ion-list>
+      <ion-list-header>
+        <ion-label>Templates</ion-label>
+        <ion-button class="ion-text-start" color="secondary">+ Template</ion-button>
+        <ion-button size="small"><ion-icon name="search-outline"></ion-icon></ion-button>
+      </ion-list-header>
+      <div *ngIf="showData">
+        <ion-item class="template-item" *ngFor="let i of templates" button lines="none">
+          <ion-label>{{i.title}}</ion-label>
+        </ion-item>
+      </div>
+    </ion-list>
+  </ion-content>
