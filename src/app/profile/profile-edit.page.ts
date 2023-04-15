@@ -39,18 +39,27 @@ export class ProfileEditPage implements OnInit {
 
   constructor() {
     this.setToday();
+    this.brDateToYMD(this.user.dob)
+  }
+
+  brDateToYMD(str: string) {
+    let arr = str.split('/')
+    return (arr[2] + '-' + arr[1] + '-' + arr[0])
   }
 
   setToday() {
-    this.formattedString = format(parseISO(format(new Date(), 'yyyy-MM-dd') + 'T09:00:00.000Z'), 'HH:mm, MMM d, yyyy');
+    this.brDateToYMD(this.user.dob)
+    this.formattedString = format(parseISO(format(new Date(this.brDateToYMD(this.user.dob)), 'yyyy-MM-dd') + 'T09:00:00.000Z'), 'dd/MM/yyyy');
   }
 
   dateChanged(value: any) {
     console.log(value)
     this.dateValue = value;
     this.user.dob = this.formattedString;
-    this.formattedString = format(parseISO(value), 'HH:mm, MMM d, yyyy');
+    this.formattedString = format(parseISO(value), 'dd/MM/yyyy');
     this.showPicker = false;
+
+    this.brDateToYMD(this.user.dob)
   }
 
 
