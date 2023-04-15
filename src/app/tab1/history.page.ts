@@ -8,14 +8,14 @@ import homeData from '../../assets/data/home.json';
 import { SharedDirectivesModule } from '../directives/shared-directives.module';
 
 @Component({
-  selector: 'app-tab1',
-  templateUrl: 'tab1.page.html',
-  styleUrls: ['tab1.page.scss'],
+  selector: 'history',
+  templateUrl: 'history.page.html',
+  styleUrls: ['history.page.scss'],
   standalone: true,
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   imports: [IonicModule, ExploreContainerComponent, CommonModule, SharedDirectivesModule],
 })
-export class Tab1Page {
+export class HistoryPage {
   videos: any[] = [];
   segments: any[] = [];
   shouldHideToolbar = false;

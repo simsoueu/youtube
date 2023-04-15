@@ -9,12 +9,12 @@ export const routes: Routes = [
       {
         path: 'tab1',
         loadComponent: () =>
-          import('../tab1/tab1.page').then((m) => m.Tab1Page),
+          import('../tab1/history.page').then((m) => m.HistoryPage),
       },
       {
         path: 'tab2',
         loadComponent: () =>
-          import('../tab2/tab2.page').then((m) => m.Tab2Page),
+          import('../start/start.page').then((m) => m.StartPage),
       },
       {
         path: 'tab3',
@@ -22,9 +22,19 @@ export const routes: Routes = [
           import('../tab3/tab3.page').then((m) => m.Tab3Page),
       },
       {
-        path: 'tab4',
+        path: 'profile',
         loadComponent: () =>
-          import('../tab4/tab4.page').then((m) => m.Tab4Page),
+          import('../profile/profile.page').then((m) => m.ProfilePage),
+      },
+      {
+        path: 'progress',
+        loadComponent: () =>
+          import('../progress/progress.page').then((m) => m.ProgressPage),
+      },
+      {
+        path: 'profile/profile-edit',
+        loadComponent: () =>
+          import('../profile/profile-edit.page').then((m) => m.ProfileEditPage),
       },
       {
         path: '',

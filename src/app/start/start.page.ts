@@ -4,13 +4,13 @@ import { ExploreContainerComponent } from '../explore-container/explore-containe
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-tab2',
-  templateUrl: 'tab2.page.html',
-  styleUrls: ['tab2.page.scss'],
+  selector: 'app-start',
+  templateUrl: 'start.page.html',
+  styleUrls: ['start.page.scss'],
   standalone: true,
   imports: [IonicModule, ExploreContainerComponent, CommonModule]
 })
-export class Tab2Page {
+export class StartPage {
   templates: any[] = [];
   showData: boolean = false;
 

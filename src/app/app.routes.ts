@@ -6,15 +6,20 @@ export const routes: Routes = [
     loadChildren: () => import('./tabs/tabs.routes').then((m) => m.routes),
   },
   {
-    path: 'tab4',
-    loadComponent: () => import('./tab4/tab4.page').then( m => m.Tab4Page)
+    path: 'profile',
+    loadComponent: () => import('./profile/profile.page').then(m => m.ProfilePage)
+  },
+
+  {
+    path: 'profile/edit',
+    loadComponent: () => import('./profile/profile-edit.page').then(m => m.ProfileEditPage),
   },
   {
     path: 'details',
-    loadComponent: () => import('./details/details.page').then( m => m.DetailsPage)
+    loadComponent: () => import('./details/details.page').then(m => m.DetailsPage)
   },
   {
     path: 'sheet',
-    loadComponent: () => import('./sheet/sheet.page').then( m => m.SheetPage)
+    loadComponent: () => import('./sheet/sheet.page').then(m => m.SheetPage)
   },
 ];

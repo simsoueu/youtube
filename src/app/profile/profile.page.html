@@ -1,0 +1,48 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Profile
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Profile</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content class="ion-align-items-end">
+
+
+
+    <ion-grid class="ion-padding">
+      <ion-row class="ion-padding-top"></ion-row>
+      <ion-row class="ion-padding-top"></ion-row>
+      <ion-row class="ion-justify-content-center">
+        <ion-col size="10">
+          <ion-button [routerLink]="['profile-edit']" expand="block">
+            <ion-icon slot="start" name="create-outline"></ion-icon>
+            Edit Profile
+          </ion-button>
+        </ion-col>
+      </ion-row>
+      <ion-row class="ion-padding-top"></ion-row>
+
+      <ion-row *ngFor="let item of items" class="ion-justify-content-center">
+        <ion-col size="10">
+          <ion-button fill="clear" expand="block">
+            <ion-icon [name]="item.icon" slot="start"></ion-icon>
+            {{item.text}}
+          </ion-button>
+        </ion-col>
+      </ion-row>
+
+
+    </ion-grid>
+
+
+
+  </ion-content>
+</ion-content>

@@ -1,0 +1,21 @@
+<ion-list>
+  <ion-item>
+    <h2>My Progress</h2>
+  </ion-item>
+  <ion-item>
+    <ion-label>Latest Workout:</ion-label>
+    <ion-label>{{user.latestWorkout}}</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label>Workout Streak:</ion-label>
+    <ion-label>{{user.workoutStreak}}</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label>Badges Earned:</ion-label>
+    <ion-label>{{user.badges}}</ion-label>
+  </ion-item>
+</ion-list>
+
+<ion-button fill="outline" color="secondary" (click)="shareOnSocialMedia()">
+  Share My Progress
+</ion-button>

@@ -3,8 +3,8 @@
 
     <ion-tab-bar slot="bottom">
 
-      <ion-tab-button tab="tab4" #tab4>
-        <ion-icon aria-hidden="true" [name]="tab4.selected ? 'person-circle' : 'person-circle-outline'"></ion-icon>
+      <ion-tab-button tab="profile" #profile>
+        <ion-icon aria-hidden="true" [name]="profile.selected ? 'person-circle' : 'person-circle-outline'"></ion-icon>
         <ion-label>Profile</ion-label>
       </ion-tab-button>
 
@@ -16,7 +16,7 @@
 
       <ion-tab-button (click)="add()">
         <ion-icon name="add-circle-outline" color="secondary"></ion-icon>
-        <ion-label>Start</ion-label>
+        <ion-label>New Workout</ion-label>
       </ion-tab-button>
 
       <ion-tab-button tab="tab1" #tab1>
