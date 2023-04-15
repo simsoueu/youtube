@@ -18,11 +18,16 @@ export class Tab4Page implements OnInit {
     email: 'johndoe@example.com',
     dob: '01/01/1980',
     height: '180 cm',
-    weight: '80 kg'
+    weight: '80 kg',
+    latestWorkout: '13/04/2023',
+    workoutStreak: '5 days',
+    badges: ['golden member']
   };
   constructor() { }
 
   ngOnInit() {
   }
+
+  shareOnSocialMedia() { }
 
 }

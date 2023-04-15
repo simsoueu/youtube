@@ -27,6 +27,14 @@ export class Tab2Page {
       'PHUL Training Program (4)',
       'BTB | Full Body (3)',
       'Upper / Lower Body Split (6)',
+      'Soccer bro (4)',
+      'PHUL Training Program (4)',
+      'BTB | Full Body (3)',
+      'Upper / Lower Body Split (6)',
+      'Soccer bro (4)',
+      'PHUL Training Program (4)',
+      'BTB | Full Body (3)',
+      'Upper / Lower Body Split (6)',
     ].map((val) => ({
       title: val, selected: false,
     }));
